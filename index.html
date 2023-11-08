@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/main.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+
+    <title>Restaurant Food</title>
+  </head>
+  <body>
+    <!-- Header Start -->
+    <header class="header p-3 position-absolute start-0 top-0 end-0">
+      <div class="d-flex justify-content-between align-items-center">
+        <a href="/" class="text-decoration-none text-white fs-5 fw-bold">
+          Restaurant Food
+        </a>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="About-us.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+        
+        <div>
+          <button
+            class="navbar-toggler text-white"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbar"
+            aria-controls="navbar"
+            aria-expanded="false"
+            aria-label="toggle navigation"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="36"
+              height="36"
+              fill="currentColor"
+              class="bi bi-list"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- Header end -->
+
+    <!-- Flyout Navigation Start -->
+    <nav class="collapse navbar-collapse dropdown-nav" id="navbar">
+      <div
+        class="dropdown-nav__container container-xxl d-flex align-items-start align-items-md-center"
+      >
+        <div class="row align-items-start">
+          <div class="col-12 col-sm-4 mt-4">
+            <a href="#" class="row text-decoration-none">
+              <div class="col-2 col-sm-12 mb-4">
+                <img
+                  src="/image/akemy-mory-YUzl-CT6i2M-unsplash.jpg"
+                  alt="Food Restaurant"
+                  class="img-fluid"
+                  width="553"
+                  height="746"
+                  loading="lazy"
+                />
+              </div>
+              <div class="col-10">
+                <h3>Amazing Restaurant</h3>
+                <p>Find out more about our amazing flavour</p>
+                <p>Learn More <i class="bi bi-arrow-right-short"></i></p>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-12 col-sm-4 mt-4">
+            <a href="#" class="row text-decoration-none">
+              <div class="col-2 col-sm-12 mb-4">
+                <img
+                  src="/image/jonathan-borba-uB7q7aipU2o-unsplash.jpg"
+                  alt="Food Restaurant"
+                  class="img-fluid"
+                  width="553"
+                  height="746"
+                  loading="lazy"
+                />
+              </div>
+              <div class="col-10">
+                <h3>Amazing Restaurant</h3>
+                <p>Find out more about our amazing flavour</p>
+                <p>Learn More <i class="bi bi-arrow-right-short"></i></p>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-12 col-sm-4 mt-4">
+            <a href="#" class="row text-decoration-none">
+              <div class="col-2 col-sm-12 mb-4">
+                <img
+                  src="/image/nahima-aparicio-kCT8ONv1msM-unsplash.jpg"
+                  alt="Food Restaurant"
+                  class="img-fluid"
+                  width="553"
+                  height="746"
+                  loading="lazy"
+                />
+              </div>
+              <div class="col-10">
+                <h3>Amazing Restaurant</h3>
+                <p>Find out more about our amazing flavour</p>
+                <p>Learn More <i class="bi bi-arrow-right-short"></i></p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <button
+          class="navbar-toggler dropdown-nav__closeNavBtn"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar"
+          aria-controls="navbar"
+          aria-expanded="false"
+          aria-label="toggle navigation"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="36"
+            height="36"
+            fill="currentColor"
+            class="bi bi-x"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
+            />
+          </svg>
+        </button>
+      </div>
+    </nav>
+    <!-- Flyout Navigation end -->
+
+    <!-- Hero Start-->
+    <section class="hero">
+      <div class="hero__overlay"></div>
+      <video
+        playsinline="playsinline"
+        autoplay="autoplay"
+        muted="muted"
+        loop="loop"
+        loading="lazy"
+        class="hero__video"
+      >
+        <source
+          src="./image/production_id_3769033 (1080p).mp4"
+          type="video/mp4"
+        />
+      </video>
+
+      <div class="hero__content h-100 container-custom position-relative">
+        <div class="d-flex h-100 align-items-center hero__content-width">
+          <div class="text-white">
+            <h1 class="hero__content-width fw-bold mb-4">
+              Discover The Taste Of Real Food.
+            </h1>
+            <p class="lead mb-4">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+              neque magnam aliquid.
+            </p>
+            <a href="About-us.html" class="mt-2 btn btn-lg btn-outline-light" role="button"
+              >About-us Restaurant</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <a href="#scroll-down" class="hero__scroll-btn">
+        Explore <i class="bi bi-arrow-down-short"></i>
+      </a>
+    </section>
+    <!-- Hero End -->
+
+    <!-- Search Bar JS Start -->
+    <h2>Find To Restaurant</h2>
+      <form class="Search__Bar">
+        <label for="searchBox" class="form-label visually-hidden">Search</label>
+        <input
+          type="text"
+          class="form-control me-2"
+          id="searchBox"
+          placeholder="Search"
+        />
+        <button type="button" id="searchButton" class="btn">
+          search
+        </button>
+        <div id="cards" class="row"></div>
+      </div>
+    </form>
+    <div class="container-1 row"></div>
+    <div class="alert alert-danger" id="errorMessage" role="alert">no data</div>
+    <div class="container-fluid text-center mb-3 mt-3">
+      <button type="button" class="btn btn-secondary" id="Prev">Prev</button>
+      <button type="button" class="btn btn-secondary" id="Next">Next</button>
+    </div>
+    <!-- Search Bar JS End -->
+
+    <a id="scroll-down"></a>
+
+    <!-- Section One Start -->
+    <section class="steps container-custom">
+      <div class="row">
+        <div class="col-12 col-sm-6 d-md-flex justify-content-md-center">
+          <img
+            src="./image/bon-vivant-qom5MPOER-I-unsplash.jpg"
+            alt="Food Restaurant"
+            class="img-fluid pb-4 steps__section-thumbnail"
+            width="553"
+            height="746"
+            loading="lazy"
+          />
+        </div>
+        <div class="col-12 col-sm-6 align-self-center justify-content-md-center">
+          <div class="steps__content-width">
+            <span>01</span>
+            <h1 class="h2 mb-4">Amazing Restaurant Food</h1>
+            <p class="mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde, assumenda. Et, alias ratione amet, odit placeat voluptatibus facere error animi delectus deleniti earum dicta similique voluptatem qui cum quaerat corrupti.</p>
+            <a href="#">Read More <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+    </section>
+    <!-- Section One End -->
+
+    <!-- Section two Start -->
+    <section class="steps steps--background">
+      <div class="container-custom">
+        <div class="row">
+          <div class="col-12 col-sm-6 d-md-flex justify-content-md-center order-sm-1">
+            <img
+              src="./image/derek-duran-Jz4QMhLvGgw-unsplash.jpg"
+              alt="Sushi Restaurant"
+              class="img-fluid pb-4 steps__section-thumbnail"
+              width="553"
+              height="746"
+              loading="lazy"
+            />
+          </div>
+          <div class="col-12 col-sm-6 align-self-center justify-content-md-center">
+            <div class="steps__content-width">
+              <span>02</span>
+              <h1 class="h2 mb-4">Sushi Restaurant Food</h1>
+              <p class="mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde, assumenda. Et, alias ratione amet, odit placeat voluptatibus facere error animi delectus deleniti earum dicta similique voluptatem qui cum quaerat corrupti.</p>
+              <a href="#">Read More <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <!-- Section three Start -->
+    <section class="steps container-custom">
+      <div class="row">
+        <div class="col-12 col-sm-6 d-md-flex justify-content-md-center">
+          <img
+            src="./image/jonathan-borba-Gdi8wDpQeg4-unsplash.jpg"
+            alt="Food Restaurant"
+            class="img-fluid pb-4 steps__section-thumbnail"
+            width="553"
+            height="746"
+            loading="lazy"
+          />
+        </div>
+        <div class="col-12 col-sm-6 align-self-center justify-content-md-center">
+          <div class="steps__content-width">
+            <span>03</span>
+            <h1 class="h2 mb-4">Amazing Restaurant Classic Beef</h1>
+            <p class="mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde, assumenda. Et, alias ratione amet, odit placeat voluptatibus facere error animi delectus deleniti earum dicta similique voluptatem qui cum quaerat corrupti.</p>
+            <a href="#">Read More <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+    </section>
+    <!-- Section Three End -->
+
+    <!-- Section With 3 Col's Start -->
+    <section class="colorforsection text-white py-4">
+      <div class="container-custom my-4">
+        <div class="row">
+          <div class="col-12 col-sm-4 mb-4">
+            <img src="image/jakub-kapusnak-4f4YZfDMLeU-unsplash.jpg" class="mb-4 img-fluid" alt="Food" width="441" height="248" loading="lazy">
+            <h3>Amazing Restaurant Food</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore voluptates quos repudiandae quidem? Eos soluta aspernatur cum voluptate assumenda voluptatem voluptatum, vitae aliquid nesciunt, quidem officia quos, consectetur id? Itaque!</p>
+          </div>
+
+          <div class="col-12 col-sm-4 mb-4">
+            <img src="image/jay-wennington-N_Y88TWmGwA-unsplash.jpg" class="mb-4 img-fluid" alt="Food" width="441" height="248" loading="lazy">
+            <h3>Restaurant Classic</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore voluptates quos repudiandae quidem? Eos soluta aspernatur cum voluptate assumenda voluptatem voluptatum, vitae aliquid nesciunt, quidem officia quos, consectetur id? Itaque!</p>
+          </div>
+
+          <div class="col-12 col-sm-4 mb-4">
+            <img src="image/matt-alaniz-E34HXliHyg8-unsplash.jpg" class="mb-4 img-fluid" alt="Food" width="441" height="248" loading="lazy">
+            <h3>Restaurant Pizza Food</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore voluptates quos repudiandae quidem? Eos soluta aspernatur cum voluptate assumenda voluptatem voluptatum, vitae aliquid nesciunt, quidem officia quos, consectetur id? Itaque!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section With 3 Col's End -->
+
+    <!-- Footer Start -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="footer-about">
+              <div class="footer-logo">
+                <a href="#"><img src="./image/nico-smit-2M6ewSjbo60 unsplash.jpg" alt="footer logo"></a>
+              </div>
+              <p>The Customer is at the heart of our unique bussiness model, which include design.</p>
+              <a href="#"><img src="./image/payment.png" alt=""></a>
+            </div>
+          </div>
+
+          <div class="col-lg-2 offset-lg-1 col-md-3 col-sm-6">
+            <div class="footer-widget">
+              <h6>Restaurant Food</h6>
+              <ul>
+                <li><a href="#">Restaurant Food</a></li>
+                <li><a href="#">Recomendation Food</a></li>
+                <li><a href="#">Best Seller Food</a></li>
+                <li><a href="#"> Strategist Restaurant Food</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-3 col-sm-6">
+            <div class="footer-widget">
+              <h6>Restaurant Food</h6>
+              <ul>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Payment Methods</a></li>
+                <li><a href="#">Delivery</a></li>
+                <li><a href="#"> Return & Exchanges</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-3 offset-lg-1 col-md-6 col-sm-6">
+            <div class="footer-widget">
+              <h6>NewsLetter</h6>
+              <div class="footer-newsLetter">
+                <p>Be the first to know new arrivals, looks books restaurant, and so manny discounts for food in restaurant in Australian.</p>
+                <form action="#">
+                  <input type="text" placeholder="Your Emails">
+                  <button type="submit"><span><i class="fa fa-envelope" arial-hidden="true"></i></span></button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <div class="footer-copyright-text">
+              <p>CopyRight &copy; 2023 All rights reserved | This template is made with <i class="fa fa-heart-o" arial-hidden="true"></i> by <a href="#"></a> CodingFST</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
+  </body>
+</html>
