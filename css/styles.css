@@ -624,6 +624,9 @@ hr {
   color: #5e503f;
 }
 
+.navbar-nav {
+  flex-direction: row !important;
+}
 .nav-item {
   margin: 0px 10px 0px 15px;
 }
