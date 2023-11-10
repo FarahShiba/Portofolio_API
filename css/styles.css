@@ -287,6 +287,10 @@ form button {
 .footer-about {
   margin-bottom: 30px;
 }
+.footer-logo {
+  width: 130px;
+  height: 100px;
+}
 
 .footer-about .footer-logo {
   margin-bottom: 30px;
@@ -624,6 +628,7 @@ hr {
   color: #5e503f;
 }
 
+/* Navbar */
 .navbar-nav {
   flex-direction: row !important;
 }
