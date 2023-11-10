@@ -634,7 +634,7 @@ hr {
   margin-left: 40%;
 }
 .nav-item {
-  margin: 0px 10px 0px 15px;
+  margin: 0px 20px 0px 22px;
 }
 
 .nav-item .nav-link {
@@ -660,5 +660,5 @@ hr {
 }
 
 .nav-link:hover {
-  color: brown;
+  color: #592e2e !important;
 }
