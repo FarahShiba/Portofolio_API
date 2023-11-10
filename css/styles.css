@@ -631,7 +631,6 @@ hr {
 /* Navbar */
 .navbar-nav {
   flex-direction: row !important;
-  margin-left: 40%;
 }
 .nav-item {
   margin: 0px 20px 0px 22px;
