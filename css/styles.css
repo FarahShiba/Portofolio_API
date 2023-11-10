@@ -631,13 +631,14 @@ hr {
 /* Navbar */
 .navbar-nav {
   flex-direction: row !important;
+  margin-left: 40%;
 }
 .nav-item {
   margin: 0px 10px 0px 15px;
 }
 
 .nav-item .nav-link {
-  color: #e7c7ad;
+  color: white;
   font-size: 15px;
   font-weight: lighter;
   position: relative;
@@ -648,7 +649,7 @@ hr {
   position: absolute;
   bottom: -1px;
   left: 0px;
-  background-color: #e7c7ad;
+  background-color: #5e503f;
   width: 0%;
   height: 3px;
   transition: 0.4s ease-in-out;
