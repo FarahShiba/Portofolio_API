@@ -567,6 +567,10 @@ hr {
   line-height: 18px;
 }
 
+.write {
+  text-align: justify;
+}
+
 @media (max-width: 1385px) {
   .about-us {
     padding: 4% 4%;
