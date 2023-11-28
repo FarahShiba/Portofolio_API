@@ -443,8 +443,12 @@ footer a:hover a:focus {
   border-radius: 20px;
   margin-bottom: 8%;
 }
+.btn {
+  padding: 10px;
+  /* --bs-btn-padding-y: 0.375rem; */
+}
 
-btn-primary {
+.btn-primary {
   background-color: #5e503f;
   border: #c6ac8f;
 }
